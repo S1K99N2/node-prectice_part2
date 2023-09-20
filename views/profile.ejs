@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, harum!</h1>
+    <h3>Name
+        <%= user.name %>
+    </h3>
+    <h3>Roll number
+        <%= user.roll %>
+    </h3>
+    <h3>School
+        <%= user.school %>
+    </h3>
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+            <li><%= item %></li>
+       <% }) %>
+    </ul>
+</body>
+
+</html>
+
+<!-- const express=require('express');
+const app=express();
+app.set('view engine','ejs')
+
+
+app.get("/profile",(_,res)=>{
+const user={
+name:'nahe singh',
+roll:28,
+scholl:"middle schol hosir",
+skills:['php','js','c++','java']
+}
+res.render("profile", { user })
+})
+app.listen(5000); -->
