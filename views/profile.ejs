@@ -13,21 +13,8 @@
 </head>
 
 <body>
+    <%-include('comman/header');%>
     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, harum!</h1>
-    <h3>Name
-        <%= user.name %>
-    </h3>
-    <h3>Roll number
-        <%= user.roll %>
-    </h3>
-    <h3>School
-        <%= user.school %>
-    </h3>
-    <ul>
-        <% user.skills.forEach((item)=>{ %>
-            <li><%= item %></li>
-       <% }) %>
-    </ul>
 </body>
 
 </html>
